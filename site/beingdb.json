@@ -1,6 +1,6 @@
 {
   "title": "REWIND artists' interviews",
-  "description": "Facts about British and international video artists, their works, exhibitions and collaborators, extracted from [REWIND](https://rewind.ac.uk/) interviews and queried with [BeingDB](https://github.com/jptmoore/beingdb) in your browser. The facts were extracted by a language model: they are a **research artifact**, not verified catalogue metadata. Browse **Predicates** for the vocabulary, or learn the query language in the [tutorial](https://jptmoore.github.io/beingdb-wasm/tutorial/).",
+  "description": "Facts about British and international video artists, their works, exhibitions and collaborators, extracted from [REWIND](https://rewind.ac.uk/) interviews and queried with [BeingDB](https://github.com/beingdb/beingdb) in your browser. The facts were extracted by a language model: they are a **research artifact**, not verified catalogue metadata. Browse **Predicates** for the vocabulary, or learn the query language in the [tutorial](https://beingdb.github.io/beingdb-wasm/tutorial/).",
   "examples": [
     {
       "title": "Works made 1975-1980",

@@ -3,9 +3,9 @@
 Facts about British and international video artists, their works,
 exhibitions and collaborators, taken from the
 [REWIND](https://rewind.ac.uk/) archive of artists' interviews, in
-[BeingDB](https://github.com/jptmoore/beingdb) format.
+[BeingDB](https://github.com/beingdb/beingdb) format.
 
-**[Query the facts in your browser](https://jptmoore.github.io/beingdb-rewind-interviews/)**,
+**[Query the facts in your browser](https://beingdb.github.io/beingdb-rewind-interviews/)**,
 with nothing to install.
 
 > **About the data.** The facts were extracted automatically from the
@@ -39,14 +39,14 @@ predicate. BeingDB shows both when you browse the predicates.
 
 ## Query the facts
 
-- **In the browser:** <https://jptmoore.github.io/beingdb-rewind-interviews/>.
+- **In the browser:** <https://beingdb.github.io/beingdb-rewind-interviews/>.
   Use the example queries, or click **Predicates** to see what you can ask
-  about. The [BeingDB tutorial](https://jptmoore.github.io/beingdb-wasm/tutorial/)
+  about. The [BeingDB tutorial](https://beingdb.github.io/beingdb-wasm/tutorial/)
   teaches the query language on this dataset.
 - **With BeingDB:**
 
   ```bash
-  beingdb clone https://github.com/jptmoore/beingdb-rewind-interviews.git --git ./git_store
+  beingdb clone https://github.com/beingdb/beingdb-rewind-interviews.git --git ./git_store
   beingdb compile --git ./git_store --pack ./pack_store
   beingdb repl --pack ./pack_store
   ```
@@ -68,7 +68,7 @@ Edit the files in `predicates/` directly:
 - Every fact in a file has the same predicate name and number of arguments.
 - Values are atoms (`kevin_atherton`), strings (`"The Video Stairs"`),
   numbers (`42`) or dates (`@1975`, `@1975-06`, `@1975-06-21`). See BeingDB's
-  [query language](https://github.com/jptmoore/beingdb/blob/main/docs/query-language.md).
+  [query language](https://github.com/beingdb/beingdb/blob/main/docs/query-language.md).
 - Use the same atom for the same thing everywhere, so facts join up across
   predicates: `created_by(tape_tape, kevin_atherton)` and
   `year_created(tape_tape, @1975)` together say when Kevin Atherton made
@@ -111,12 +111,12 @@ different interviews, to that interview's `idOverrides` in
 ## Build a new output
 
 After editing, rebuild the browser site and commit it with your changes.
-This needs [BeingDB](https://github.com/jptmoore/beingdb/blob/main/docs/installation.md)
-installed, and [BeingDB WASM](https://github.com/jptmoore/beingdb-wasm)
+This needs [BeingDB](https://github.com/beingdb/beingdb/blob/main/docs/installation.md)
+installed, and [BeingDB WASM](https://github.com/beingdb/beingdb-wasm)
 cloned next to this repository:
 
 ```bash
-git clone https://github.com/jptmoore/beingdb-wasm.git ../beingdb-wasm   # once
+git clone https://github.com/beingdb/beingdb-wasm.git ../beingdb-wasm   # once
 
 npm run lint
 npm run build-site

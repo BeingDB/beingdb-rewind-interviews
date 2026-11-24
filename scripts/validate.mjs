@@ -34,7 +34,7 @@ function main() {
   if (!hasCommand("beingdb-import") && !useCombined) {
     console.log(
       "validate: no `beingdb` / `beingdb-import` executable found on PATH. " +
-        "Skipping (this check is optional - see https://github.com/jptmoore/beingdb).",
+        "Skipping (this check is optional - see https://github.com/beingdb/beingdb).",
     );
     return;
   }

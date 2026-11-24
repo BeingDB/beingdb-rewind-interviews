@@ -30,7 +30,7 @@ function run(cmd, args) {
 const workDir = mkdtempSync(join(tmpdir(), "beingdb-site-"));
 try {
   if (!existsSync(join(WASM, "scripts", "site.mjs")))
-    throw new Error(`BeingDB WASM not found at ${WASM}; clone https://github.com/jptmoore/beingdb-wasm there or set BEINGDB_WASM`);
+    throw new Error(`BeingDB WASM not found at ${WASM}; clone https://github.com/beingdb/beingdb-wasm there or set BEINGDB_WASM`);
   const data = join(workDir, "rewind.browser.json");
   run(BEINGDB, ["import", "--input", ROOT, "--git", join(workDir, "git_store")]);
   run(BEINGDB, ["compile", "--git", join(workDir, "git_store"), "--pack", join(workDir, "pack_store")]);

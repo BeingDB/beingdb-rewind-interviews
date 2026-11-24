@@ -77,9 +77,9 @@
       h(
         "p.footer",
         "Queries run in your browser with ",
-        h("a", { href: "https://github.com/jptmoore/beingdb-wasm", target: "_blank", rel: "noopener" }, "BeingDB WASM"),
+        h("a", { href: "https://github.com/beingdb/beingdb-wasm", target: "_blank", rel: "noopener" }, "BeingDB WASM"),
         "; nothing is sent to a server. ",
-        h("a", { href: "https://github.com/jptmoore/beingdb/blob/main/docs/query-language.md", target: "_blank", rel: "noopener" }, "Query language reference"),
+        h("a", { href: "https://github.com/beingdb/beingdb/blob/main/docs/query-language.md", target: "_blank", rel: "noopener" }, "Query language reference"),
         ".",
       ),
     );
